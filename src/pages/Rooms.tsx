@@ -1,10 +1,12 @@
+import Room from '../components/Room';
+import RoomInvitation from '../components/RoomInvitation';
+import Container from "../components/layouts/container"
+
 function Rooms() {
   return (
     <>
-      <div className="container mx-auto">
-        <div className="container max-w-[1090px] mx-auto mt-5">
-          <div className="content-wrappers flex gap-6">
-            <div className="rooms-containers-list bg-white w-[70%] rounded-md">
+      <Container>
+          <div className="rooms-containers-list bg-white w-[70%]  border-[1.5px] border-gray-300 rounded-md">
               <div className="rooms-header flex justify-between px-4 py-2 items-center">
                 <div className="header-title font-bold">
                   <h1>Ruang Anda</h1>
@@ -26,47 +28,19 @@ function Rooms() {
               </div>
               <div className="room-list mt-4">
                 <ul>
-                  <li className="the-room font-semibold border-b-[1.5px] border-gray-300 py-2 text-sm ">
-                    <div className="room-wrapper flex items-center px-4 gap-3">
-                    <div className="room-thumbnails h-8 w-8 overflow-hidden rounded-md">
-                        <img src="https://qph.cf2.quoracdn.net/main-thumb-ti-1721737-100-rpusataldgresgdqtcqkhbmsupnggpou.jpeg" alt="thumbnail" />
-                    </div>
-                    <h1>
-                       Postingan Menarik Dan Bermanfaat
-                    </h1>
-                    </div>
-                  </li>
-                  <li className="the-room font-semibold border-b-[1.5px] border-gray-300 py-2 text-sm ">
-                    <div className="room-wrapper flex items-center px-4 gap-3">
-                    <div className="room-thumbnails h-8 w-8 overflow-hidden rounded-md">
-                        <img src="https://qph.cf2.quoracdn.net/main-thumb-ti-1721737-100-rpusataldgresgdqtcqkhbmsupnggpou.jpeg" alt="thumbnail" />
-                    </div>
-                    <h1>
-                       Postingan Menarik Dan Bermanfaat
-                    </h1>
-                    </div>
-                  </li>
-                  <li className="the-room font-semibold border-b-[1.5px] border-gray-300 py-2 text-sm ">
-                    <div className="room-wrapper flex items-center px-4 gap-3">
-                    <div className="room-thumbnails h-8 w-8 overflow-hidden rounded-md">
-                        <img src="https://qph.cf2.quoracdn.net/main-thumb-ti-1721737-100-rpusataldgresgdqtcqkhbmsupnggpou.jpeg" alt="thumbnail" />
-                    </div>
-                    <h1>
-                       Postingan Menarik Dan Bermanfaat
-                    </h1>
-                    </div>
-                  </li>
-                    
-                    
+                   <Room/>
+                   <Room/>
+                   <Room/>      
+                   <Room/>
+                   <Room/>
+                   <Room/>            
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="mb-64">
-
-          </div>
-        </div>
-      </div>
+       <RoomInvitation />
+      </Container>
+        
+        
     </>
   )
 }

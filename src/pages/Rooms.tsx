@@ -6,6 +6,7 @@ function Rooms() {
   return (
     <>
       <Container>
+          
           <div className="rooms-containers-list bg-white w-[70%]  border-[1.5px] border-gray-300 rounded-md">
               <div className="rooms-header flex justify-between px-4 py-2 items-center">
                 <div className="header-title font-bold">
@@ -28,13 +29,18 @@ function Rooms() {
               </div>
               <div className="room-list mt-4">
                 <ul>
-                   <Room/>
-                   <Room/>
-                   <Room/>      
-                   <Room/>
-                   <Room/>
-                   <Room/>            
+                   <Room title='Web Developer Indonesia'/>
+                   <Room title='Kisah-Kisah Yang Terlupakan' imageUrl='https://qph.cf2.quoracdn.net/main-thumb-ti-2635-100-ndgitufkwdafqfciqjvieyerutfocbom.jpeg'/>
+                   <Room title='Cocok-Logika' imageUrl='https://i.pinimg.com/originals/a6/94/4a/a6944ad25186f826dbdcf3cd108dc060.png'/>
+                   <Room title='Diskusi Politik' imageUrl='https://qph.cf2.quoracdn.net/main-thumb-ti-1740080-100-cljcugemjmpiriysdsxhdmiojivwwzdc.jpeg'/>
+                   <Room title='Programmer Indonesia Community' imageUrl='https://i.pinimg.com/originals/1c/54/f7/1c54f7b06d7723c21afc5035bf88a5ef.png'/>
+                   <Room title='Analisa Wacana Politik' imageUrl='https://visinews.net/wp-content/uploads/2020/12/IMG-20201211-WA0035.jpg'/>
+                   <Room title='Belajar dari Indonesia dan Dunia' imageUrl='https://cdn.britannica.com/48/1648-004-A33B72D8/Flag-Indonesia.jpg'/>
                 </ul>
+              </div>
+              <div className="room-more p-2 flex justify-center items-center gap-1">
+                  <p className="text-gray-500 text-sm">Lihat Lebih Lanjut</p>
+                  <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5 8.5 7 7 7.005-7" className="icon_svg-stroke" stroke="#666" strokeWidth="1.5" fill="none" strokeLinecap="round"></path></svg>
               </div>
             </div>
        <RoomInvitation />

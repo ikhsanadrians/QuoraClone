@@ -6,7 +6,7 @@ type RoomListProps = {
 
 export default function SidebarRoom() {
     return (
-      <div className="sidebar-room sticky top-[80px] h-[500px] overflow-y-scroll">
+      <div className="sidebar-room sticky top-[80px] h-[500px] overflow-y-scroll lg:block hidden">
         <ul className='flex flex-col gap-4'>
             <li className="cursor-pointer">
                 <div className="room flex gap-2 text-base items-center bg-gray-200 max-w-fit py-[4px] px-2 rounded-md">

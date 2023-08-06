@@ -11,7 +11,7 @@ export default function HomePage() {
         <>
             <Container>
                 <SidebarRoom />
-                <div className="posts w-[60%]">
+                <div className="posts w-full lg:w-[60%]">
                     <NewPost />
                     <ThePost />
                     <ThePost author='Faris Maulana Al-Bai' authorCredentials='Unity Game Developer Di Agate Indonesia  ·  7 Agustus' postDate='7 Agustus' authorPPUrl='https://res.cloudinary.com/dewnyzbmg/image/upload/v1691343076/imageedit_1_9296104578_cj4e4u.png' question='Apa strategi terbaik untuk mengoptimalkan kinerja dan pengalaman pengguna dalam pengembangan game yang kompleks dan membutuhkan sumber daya tinggi?' answer='Untuk mengoptimalkan kinerja dan pengalaman pengguna dalam pengembangan game yang kompleks dan membutuhkan sumber daya tinggi, ada beberapa strategi yang dapat diimplementasikan:

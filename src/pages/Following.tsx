@@ -11,7 +11,7 @@ function Following() {
     <>
       <Container>
         <SidebarRoom />
-        <div className="posts w-[60%]">
+        <div className="posts w-full lg:w-[60%]">
           <NewPost />
           <ThePost author='Maulana Hafizh Sirajudin' authorCredentials='Linux Enthusiast | Software Engineering Student at SMKN 10 Jakarta  ·  7 Agustus' postDate='7 Agustus' authorPPUrl='https://regmedia.co.uk/2016/08/26/torvalds.jpg' question='Distro Linux Manakah Terbaik Untuk Laptop Low Spec?' answer='Pemilihan distribusi Linux terbaik untuk laptop dengan spesifikasi rendah dapat tergantung pada preferensi pengguna, kebutuhan, dan keahlian teknis. Beberapa distribusi Linux yang biasanya dianggap cocok untuk laptop dengan spesifikasi rendah adalah:' thumbnailUrl='https://linuxconfig.org/wp-content/uploads/2020/05/01-arch-linux-download.png' upvoteValue={'967'} commentValue={95} shareValue={68} />
           <ThePost author='Faris Maulana Al-Bai' authorCredentials='Unity Game Developer Di Agate Indonesia  ·  7 Agustus' postDate='7 Agustus' authorPPUrl='https://res.cloudinary.com/dewnyzbmg/image/upload/v1691343076/imageedit_1_9296104578_cj4e4u.png' question='Apa strategi terbaik untuk mengoptimalkan kinerja dan pengalaman pengguna dalam pengembangan game yang kompleks dan membutuhkan sumber daya tinggi?' answer='Untuk mengoptimalkan kinerja dan pengalaman pengguna dalam pengembangan game yang kompleks dan membutuhkan sumber daya tinggi, ada beberapa strategi yang dapat diimplementasikan:

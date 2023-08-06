@@ -12,5 +12,7 @@ export default function RoomInvitation() {
                </div>
             </div>
         )
+
+         
 }
   

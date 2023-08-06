@@ -20,17 +20,21 @@ function Answers() {
             </div>
           </div>
           <div className="question-list">
-            <QuestionToAnswer />
-            <QuestionToAnswer />
-            <QuestionToAnswer />
-            <QuestionToAnswer />
-            <QuestionToAnswer />
+            <QuestionToAnswer title='Mengapa Timor Leste tidak bisa menjadi negara kaya seperti negara Arab? Padahal negara Timor Leste memiliki sumber daya alam berupa minyak dan gas?' answersValue={1} />
+            <QuestionToAnswer title='Bagaimana otak mengolah informasi dan menyimpan ingatan?' />
+            <QuestionToAnswer title='Bagaimana penggunaan antibiotik berlebihan telah menyebabkan resistensi bakteri dan bagaimana dampaknya pada kesehatan manusia?' />
+            <QuestionToAnswer title='Apa yang diketahui tentang struktur dasar dan evolusi alam semesta dari studi astronomi dan astrofisika?'/>
+            <QuestionToAnswer title='Apa itu jaringan komputer, dan bagaimana cara kerja internet sebagai jaringan global yang menghubungkan berbagai komputer di seluruh dunia?'/>
+            <QuestionToAnswer title='Apa itu jaringan komputer, dan bagaimana cara kerja internet sebagai jaringan global yang menghubungkan berbagai komputer di seluruh dunia?'/>
+            <QuestionToAnswer title='Apa itu aplikasi berbasis microservices, dan mengapa arsitektur ini semakin populer dalam pengembangan aplikasi modern?'/>
           </div>
         </div>
         <TopicToKnow />
+     
       </Container>
-
-
+      <div className="mb-64">
+          
+          </div>
     </>
   )
 }

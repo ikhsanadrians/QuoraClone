@@ -1,10 +1,20 @@
-export default function QuestionToAnswer() {
+type QTAProps = {
+    title? : string,
+    answersValue? : number,
+    followingValue? : number,
+    date?: string
+}
+
+
+export default function QuestionToAnswer({title,answersValue,followingValue,date} : QTAProps) {
   return (
             <div className="questions-to-answers border-b-[1.5px] border-gray-300">
                 <div className="qta-contents px-4 pt-4 pb-2">
                   <div className="content-top flex items-center justify-between">
                     <div className="content-title flex-1">
-                      <h1 className='font-bold cursor-pointer hover:underline'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias maiores quas odio commodi ipsum adipisci vitae aut. Sapiente, eius tenetur?</h1>
+                      <h1 className='font-bold cursor-pointer hover:underline'>
+                        { title ? title : '  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, atque.'}
+                      </h1>
                     </div>
                     <div className="close flex self-start flex-5">
                       <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m16.243 7.757-8.486 8.486m8.486 0L7.757 7.757" className="icon_svg-stroke" fill="none" fillRule="evenodd" strokeLinecap="round" stroke="#666" strokeWidth="1.5"></path></svg>
@@ -12,7 +22,7 @@ export default function QuestionToAnswer() {
                   </div>
                   <div className="content-statistic mt-1">
                     <span className='font-semibold flex gap-1 text-[14px] text-gray-500'>
-                      Belum ada Jawaban · <p className='font-normal text-gray-500'>Terakhir Diikuti Sab</p>
+                     { answersValue ? answersValue + " Jawaban" : "Belum ada Jawaban" }  · <p className='font-normal text-gray-500'>Terakhir Diikuti {date ? date : "Sab"}</p>
                     </span>
                   </div>
                   <div className="content-btm flex justify-between items-center mt-2">
@@ -24,7 +34,7 @@ export default function QuestionToAnswer() {
                       <div className="follow-question flex rounded-full text-gray-500 gap-2 font-semibold hover:bg-gray-100 cursor-pointer py-2 px-4">
                         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g className="icon_svg-stroke" stroke="#666" strokeWidth="1.5" fill="none" fillRule="evenodd" strokeLinecap="round"><path d="M14.5 19c0-5.663-3.337-9-9-9m14 9c0-8.81-5.19-14-14-14"></path><circle cx="7.5" cy="17" r="2" className="icon_svg-fill"></circle></g></svg>
                         <span className='flex gap-1'>
-                          Ikuti · <p className='font-normal'>1</p>
+                          Ikuti  <p className='font-normal'>{ '·' + followingValue ? followingValue : 1}</p>
 
                         </span>
                       </div>

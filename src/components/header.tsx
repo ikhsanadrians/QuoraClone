@@ -1,13 +1,13 @@
 
-import logoquora from '../../public/assets/images/logoquoras.svg';
-import ProfilePicture from '../../public/assets/images/rpg.jpg';
+import logoquora from '/assets/images/logoquoras.svg';
+import ProfilePicture from '/assets/images/rpg.jpg';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
     const location = useLocation();
 
     return (
-        <header className="bg-white shadow-sm sticky top-0">
+        <header className="bg-white shadow-sm sticky top-0 z-40">
             <div className="container mx-auto flex justify-center w-full h-full">
                 <div className="header-wrappers flex items-center gap-6 h-full">
                     <img src={logoquora} alt="logoquora" className={`h-8 relative overflow-hidden`} />

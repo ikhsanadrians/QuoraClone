@@ -1,6 +1,6 @@
 import Room from '../components/Room';
 import RoomInvitation from '../components/RoomInvitation';
-import Container from "../components/layouts/container"
+import Container from "../components/layouts/Container"
 
 function Rooms() {
   return (

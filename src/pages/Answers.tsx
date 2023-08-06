@@ -1,7 +1,7 @@
 import TopicToKnow from '../components/TopicToKnow';
 import QuestionToAnswer from '../components/QuestionToAnswer';
 import SidebarAnswers from '../components/SidebarAnswers';
-import Container from '../components/layouts/container';
+import Container from '../components/layouts/Container';
 // import { useLocation } from 'react-router-dom';
 
 function Answers() {

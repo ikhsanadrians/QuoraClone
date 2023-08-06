@@ -1,5 +1,5 @@
 import Notif from '../components/Notif';
-import Container from "../components/layouts/container"
+import Container from "../components/layouts/Container"
 import SidebarNotification from "../components/SidebarNotification"
 
 function Notifications() {

@@ -32,13 +32,13 @@ export default function ThePost({author,authorPPUrl,authorCredentials,question,a
           <div className="post-profile-name font-bold ">
             <h3>{author ? author : "Abraham Gregorius"}</h3>
           </div>
-          <div className="post-profile-credentials text-gray-600">
+          <div className="post-profile-credentials text-gray-600 truncate">
             {
                authorCredentials ? authorCredentials :  <span className='flex gap-2'>Software Engineering Student , SMKN 10 Jakarta (Lulus 2024)<span className='mr-[.8px]'>·</span><p>{postDate ? postDate : "2 Agustus"}</p></span>
             }
            
           </div>
-        </div>
+           </div>
       </div>
       <div className="post-close px-4 pt-3 flex self-start">
           <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m16.243 7.757-8.486 8.486m8.486 0L7.757 7.757" className="icon_svg-stroke" fill="none" fillRule="evenodd" strokeLinecap="round" stroke="#666" strokeWidth="1.5"></path></svg>

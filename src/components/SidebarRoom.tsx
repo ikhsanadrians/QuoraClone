@@ -13,7 +13,7 @@ export default function SidebarRoom() {
                     <div className="icons bg-gray-100 p-[1px] rounded-sm">
                         <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 12h15M12 4.5v15" className="icon_svg-stroke" stroke="#666" strokeWidth="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round"></path></svg>
                     </div>
-                    <p className='text-gray-500 text-sm'>
+                    <p className='text-gray-500 text-[13px]'>
                         Buat Ruang
                     </p>
                 </div>

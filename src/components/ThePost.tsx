@@ -17,7 +17,6 @@ type PostProps = {
     upvoteValue?: string,
     commentValue?: number,
     shareValue?: number
-
 }
 
 

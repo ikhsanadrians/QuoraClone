@@ -2,6 +2,7 @@ import TopicToKnow from '../components/TopicToKnow';
 import QuestionToAnswer from '../components/QuestionToAnswer';
 import SidebarAnswers from '../components/SidebarAnswers';
 import Container from '../components/layouts/Container';
+import QTAData from '../data/questionToAnswers';
 // import { useLocation } from 'react-router-dom';
 
 function Answers() {
@@ -33,6 +34,9 @@ function Answers() {
             </div>
           </div>
           <div className="question-list">
+            {
+              QTAData.map((index,key)=><QuestionToAnswer title={index.title} answersValue={index.answersValue} date={index.date} followingValue={index.followingValue} key={key}/>)
+            }
             <QuestionToAnswer title='Mengapa Timor Leste tidak bisa menjadi negara kaya seperti negara Arab? Padahal negara Timor Leste memiliki sumber daya alam berupa minyak dan gas?' answersValue={1} />
             <QuestionToAnswer title='Bagaimana otak mengolah informasi dan menyimpan ingatan?' />
             <QuestionToAnswer title='Bagaimana penggunaan antibiotik berlebihan telah menyebabkan resistensi bakteri dan bagaimana dampaknya pada kesehatan manusia?' />

@@ -12,42 +12,33 @@ type PostProps = {
 }
 
 
-let thePosts : PostProps[] = [
+let PostData : PostProps[] = [
     {
-        author: "John Doe",
-        authorPPUrl: "https://example.com/john-doe.jpg",
-        authorCredentials: "Software Engineer",
-        question: "What is the best programming language for beginners?",
-        answer: "Many beginners find Python to be a great language to start with...",
-        thumbnailUrl: "https://example.com/beginner-programming.jpg",
-        postDate: "2023-08-09",
-        upvoteValue: "125",
-        commentValue: 32,
-        shareValue: 15
+        author:"Faris Maulana Al-Bai",
+        authorCredentials:"Unity Game Developer Di Agate Indonesia  ·  7 Agustus",
+        postDate: "7 Agustus",
+        authorPPUrl: "https://res.cloudinary.com/dewnyzbmg/image/upload/v1691343076/imageedit_1_9296104578_cj4e4u.png",
+        question: "Apa strategi terbaik untuk Menjadi Game Developer",
+        thumbnailUrl: "https://binus.ac.id/wp-content/uploads/2020/10/44-0-Tertarik-Jadi-Game-Developer-Profesional-Jurusan-Kuliah-Ini-Cocok-Untukmu.jpg",
+        upvoteValue: "1.2rb",
+        commentValue: 125,
+        shareValue: 56,
+        answer: "Menjadi seorang pengembang game adalah tujuan yang menarik, tetapi juga memerlukan komitmen, keterampilan, dan usaha yang serius. Berikut adalah beberapa strategi yang dapat membantu Anda dalam perjalanan untuk menjadi seorang pengembang game",
     },
     {
-        author: "Jane Smith",
-        authorPPUrl: "https://example.com/jane-smith.jpg",
-        authorCredentials: "Data Scientist",
-        question: "How do you preprocess text data for NLP?",
-        answer: "Text data preprocessing for NLP involves several steps...",
-        thumbnailUrl: "https://example.com/nlp-preprocessing.jpg",
-        postDate: "2023-08-08",
-        upvoteValue: "98",
-        commentValue: 22,
-        shareValue: 10
+        author: "Ardiyan Syahbani",
+        authorCredentials: "Sound Engineer Syncronize Fest Sejak 2018  ·  5 Agustus",
+        postDate: "7 Agustus",
+        authorPPUrl: "https://res.cloudinary.com/dewnyzbmg/image/upload/v1691344285/WhatsApp_Image_2022-03-27_at_09.17.06_uj3ue8.jpg",
+        question: "Pribadi terkenal mana yang diidolakan dan dikenal dalam sejarah yang sebenarnya adalah seorang yang mengerikan?",
+        answer: "Hadirin sekalian, saya persembahkan kepada Anda John Lennon:",
+        thumbnailUrl: "https://qph.cf2.quoracdn.net/main-qimg-2804660e569b8607bb36c78746f279bd-lq",
+        upvoteValue: "1.2rb",
+        commentValue: 125,
+        shareValue: 56
     },
-    {
-        author: "Alex Johnson",
-        authorPPUrl: "https://example.com/alex-johnson.jpg",
-        authorCredentials: "UX Designer",
-        question: "What are some best practices for mobile app UI design?",
-        answer: "Mobile app UI design should prioritize...",
-        thumbnailUrl: "https://example.com/mobile-app-ui.jpg",
-        postDate: "2023-08-07",
-        upvoteValue: "75",
-        commentValue: 18,
-        shareValue: 8
-    }
+   
 ]
 
+
+export default PostData

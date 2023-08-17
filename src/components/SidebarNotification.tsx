@@ -1,6 +1,6 @@
 function SidebarNotification() {
   return (
-    <div className="sidebar-notification mt-4">
+    <div className="sidebar-notification mt-4 lg:block hidden">
     <ul className="text-[14px] flex flex-col gap-2">
         <li className="font-semibold px-3 border-b-[1.5px] border-gray-300 pb-2">Filter</li>
         <li className="text-red-700 py-1 rounded-sm font-semibold bg-[#ebdddd] px-3">Semua Notifikasi</li>

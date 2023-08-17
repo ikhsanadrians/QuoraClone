@@ -5,7 +5,7 @@ interface QTAProps {
     date?: string;
   }
   
-  let QTAData: QTAProps[] = [
+  const QTAData: QTAProps[] = [
     {
       title: "Mengapa Timor Leste tidak bisa menjadi negara kaya seperti negara Arab? Padahal negara Timor Leste memiliki sumber daya alam berupa minyak dan gas?",
       answersValue: 1,

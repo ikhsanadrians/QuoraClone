@@ -12,7 +12,7 @@ type PostProps = {
 }
 
 
-let PostFollowingData : PostProps[] = [
+const PostFollowingData : PostProps[] = [
     {
         author: "Ardiyan Syahbani",
         authorCredentials: "Sound Engineer Syncronize Fest Sejak 2018  ·  5 Agustus",

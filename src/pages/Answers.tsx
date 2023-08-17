@@ -11,10 +11,9 @@ function Answers() {
     <>
       <Container>
         <SidebarAnswers />
-        <div className="questions-to-answers-list mt-2 lg:mt-4 bg-white w-full lg:w-[65%] border-[1.5px] border-gray-300 rounded-md">
-          <div className="header-mobile-answers lg:hidden block bg-white">
-             <div className="wrappers flex gap-4 -mt-4">
-                <div className="for-you">
+        <div className="header-mobile-answers lg:hidden flex items-center bg-white sticky top-[100px] p-3">
+             <div className="wrappers flex gap-4  h-full relative">
+                <div className="for-you max-w-fit after:contents-[''] after:absolute after:-bottom-3 flex items-center after:w-20 justify-center after:h-[4px] after:bg-red-700 after:rounded-tr-xl after:rounded-tl-xl font-semibold text-gray-700">
                      Untuk Anda
                 </div>
                 <div className="request">
@@ -24,7 +23,9 @@ function Answers() {
                     Draf
                 </div>
              </div>
-          </div>
+        </div>
+        <div className="questions-to-answers-list mt-2 lg:mt-4 bg-white w-full lg:w-[65%] border-[1.5px] border-gray-300 rounded-md">
+          
           <div className="qta-heads w-full py-2 px-4 border-b-[1.5px] border-gray-300">
             <div className="stars-and-text flex items-center gap-2 text-[13px] text-gray-600">
               <div className="stars bg-red-700 max-w-fit p-[2px] rounded-sm">
@@ -37,13 +38,6 @@ function Answers() {
             {
               QTAData.map((index,key)=><QuestionToAnswer title={index.title} answersValue={index.answersValue} date={index.date} followingValue={index.followingValue} key={key}/>)
             }
-            <QuestionToAnswer title='Mengapa Timor Leste tidak bisa menjadi negara kaya seperti negara Arab? Padahal negara Timor Leste memiliki sumber daya alam berupa minyak dan gas?' answersValue={1} />
-            <QuestionToAnswer title='Bagaimana otak mengolah informasi dan menyimpan ingatan?' />
-            <QuestionToAnswer title='Bagaimana penggunaan antibiotik berlebihan telah menyebabkan resistensi bakteri dan bagaimana dampaknya pada kesehatan manusia?' />
-            <QuestionToAnswer title='Apa yang diketahui tentang struktur dasar dan evolusi alam semesta dari studi astronomi dan astrofisika?'/>
-            <QuestionToAnswer title='Apa itu jaringan komputer, dan bagaimana cara kerja internet sebagai jaringan global yang menghubungkan berbagai komputer di seluruh dunia?'/>
-            <QuestionToAnswer title='Apa itu jaringan komputer, dan bagaimana cara kerja internet sebagai jaringan global yang menghubungkan berbagai komputer di seluruh dunia?'/>
-            <QuestionToAnswer title='Apa itu aplikasi berbasis microservices, dan mengapa arsitektur ini semakin populer dalam pengembangan aplikasi modern?'/>
           </div>
         </div>
         <TopicToKnow />

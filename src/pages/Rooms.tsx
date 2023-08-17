@@ -8,7 +8,7 @@ function Rooms() {
     <>
       <Container>
 
-        <div className="rooms-containers-list bg-white w-[70%]  border-[1.5px] border-gray-300 rounded-md">
+        <div className="rooms-containers-list bg-white w-full lg:w-[70%]  border-[1.5px] border-gray-300 rounded-md">
           <div className="rooms-header flex justify-between px-4 py-2 items-center">
             <div className="header-title font-bold">
               <h1>Ruang Anda</h1>

@@ -1,6 +1,6 @@
 
 export default function TopicToKnow() {
-    return ( <div className="topics mt-4 w-[20%]">
+    return ( <div className="topics mt-4 w-[20%] lg:block hidden">
         <div className="topic-top flex gap-2 justify-between items-center py-2 border-b-[1.5px] border-b-gray-300 mb-2">
             <div className="topic-to-know">
                 <h1 className='font-semibold'>Topic yang Anda Tahu</h1>

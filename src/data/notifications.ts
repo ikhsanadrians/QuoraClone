@@ -6,7 +6,7 @@ interface NotifProps {
     imageURL?: string;
   }
   
-  let NotifData: NotifProps[] = [
+  const NotifData: NotifProps[] = [
     {
       rooms: "Web Developer Indonesia",
       title: "Cara Urutan Yang Tepat dalam Mempelajari Laravel?",

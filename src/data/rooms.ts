@@ -3,7 +3,7 @@ type RoomProps = {
     title: string,
 }
   
-let RoomData : RoomProps[] = [
+const RoomData : RoomProps[] = [
    {
        imageUrl : 'https://qph.cf2.quoracdn.net/main-thumb-ti-1721737-100-rpusataldgresgdqtcqkhbmsupnggpou.jpeg',
        title: 'Web Developer Indonesia'

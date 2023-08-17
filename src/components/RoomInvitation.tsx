@@ -1,6 +1,6 @@
 export default function RoomInvitation() {
   return (
-            <div className="rooms-invitation bg-white w-[30%] max-h-[150px] border-[1.5px] border-gray-200 rounded-md">
+            <div className="rooms-invitation bg-white w-[30%] lg:block  hidden max-h-[150px] border-[1.5px] border-gray-200 rounded-md">
                <div className="invitation-header py-2 px-4 border-b-[1.5px] border-gray-200">
                   <h1 className="text-gray-500 font-medium">Undangan yang Tertunda</h1>
                </div>

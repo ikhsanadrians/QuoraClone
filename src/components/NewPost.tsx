@@ -1,11 +1,12 @@
 import ProfilePicture from '/assets/images/rpg.jpg';
 
 export default function NewPost() {
-  return (<div className="new-posts bg-white w-full px-4 py-2 rounded-md border-[1.5px] border-gray-300">
+  return (
+  <div className="new-posts bg-white w-full px-4 py-2 rounded-md border-[1.5px] border-gray-300">
     <div className="flex flex-col">
       <div className="profile-n-text w-full flex gap-3 mt-1">
         <div className="post-profile-pic h-8 w-8 border-[1.7px] border-gray-300 rounded-full overflow-hidden object-cover">
-          <img src={ProfilePicture} alt="profile-picture" className='object-cover h-full w-full' />
+          <img src={ProfilePicture} alt="profile-picture" className='object-cover h-full w-full' loading='lazy'/>
         </div>
         <input className="w-full bg-gray-100 border-[1.5px] border-gray-300 px-3 rounded-2xl" type="text" placeholder='Apa yang ingin Anda tanyakan dan bagikan?' />
       </div>

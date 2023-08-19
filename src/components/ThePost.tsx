@@ -25,7 +25,7 @@ export default function ThePost({author,authorPPUrl,authorCredentials,question,a
     <div className="post-header flex justify-between">
       <div className="post-profiles flex items-center gap-2 px-4 pt-3 pb-2">
         <div className="post-profile-picture overflow-hidden h-10 w-10 object-cover rounded-full border-[1.5px] border-gray-300">
-          <img src={authorPPUrl ? authorPPUrl : Koko} alt="profile picture" className='w-full h-full object-cover'/>
+          <img src={authorPPUrl ? authorPPUrl : Koko} alt="profile picture" className='w-full h-full object-cover' loading='lazy'/>
         </div>
         <div className="post-profile-data text-[13px]">
           <div className="post-profile-name font-bold ">
@@ -67,7 +67,7 @@ export default function ThePost({author,authorPPUrl,authorCredentials,question,a
         </div>
       </div>
       <div className="post-thumbnail w-full max-h-fit object-cover overflow-hidden">
-        <img className='object-cover w-full h-full' src={thumbnailUrl ? thumbnailUrl : Thumb} alt="thumbnail" />
+        <img className='object-cover w-full h-full' src={thumbnailUrl ? thumbnailUrl : Thumb} alt="thumbnail" loading='lazy'/>
       </div>
     </div>
     <div className="post-tools bg-white px-4 py-2 w-full flex justify-between items-center gap-4">

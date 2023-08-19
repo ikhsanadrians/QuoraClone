@@ -1,4 +1,4 @@
-import ProfilePicture from '../../public/assets/images/rpg.jpg';
+import ProfilePicture from '/assets/images/rpg.jpg';
 
 export default function NewPost() {
   return (<div className="new-posts bg-white w-full px-4 py-2 rounded-md border-[1.5px] border-gray-300">

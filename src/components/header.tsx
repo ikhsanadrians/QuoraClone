@@ -7,10 +7,10 @@ export default function Header() {
     const location = useLocation();
 
     return (
-        <header className="bg-white shadow-sm sticky top-0 z-40 hidden lg:block md:block">
+        <header className="bg-white shadow-sm sticky top-0 z-50 hidden lg:block md:block">
             <div className="container mx-auto flex justify-center w-full h-full">
                 <div className="header-wrappers flex items-center gap-6 h-full">
-                    <img src={logoquora} alt="logoquora" className={`h-8 relative overflow-hidden`} />
+                    <img src={logoquora} alt="logoquora" className={`h-8 relative overflow-hidden select-none pointer-events-none`} />
                     <div className="menus flex gap-2 h-full p-1">
                         <Link to={'/'} className={`home hover:bg-gray-100 w-full h-full py-2 px-4 rounded-md after:content-[''] ${location.pathname == '/' && 'after:bg-red-700'} after:w-12 after:h-1 flex justify-center after:absolute after:-bottom-1 relative`}>
                             <svg width="28" height="28" viewBox="0 0 24 24" fill={
@@ -42,7 +42,7 @@ export default function Header() {
                         <input type="text" placeholder='Cari Quora' className="relative -z-5 py-2 pl-9 outline-none border-[1.5px] text-xs hover:border-blue-500 border-gray-200 focus:border-blue duration-200 rounded-md w-full" />
                     </div>
                     <div className="profile-pic-lang-switch flex items-center gap-3">
-                        <div className="profile-pictures h-6 w-6 overflow-hidden rounded-full object-cover">
+                        <div className="profile-pictures h-6 w-6 overflow-hidden rounded-full object-cover select-none pointer-events-none">
                             <img src={ProfilePicture} alt="profile-picture" className='object-cover' />
                         </div>
                         <div className="lang-switch">

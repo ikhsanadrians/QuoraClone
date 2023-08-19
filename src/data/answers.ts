@@ -12,7 +12,7 @@ type PostProps = {
 }
 
 
-let PostData : PostProps[] = [
+const PostData : PostProps[] = [
     {
         author:"Faris Maulana Al-Bai",
         authorCredentials:"Unity Game Developer Di Agate Indonesia  ·  7 Agustus",

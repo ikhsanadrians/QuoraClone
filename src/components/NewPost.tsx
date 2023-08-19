@@ -1,11 +1,11 @@
 import ProfilePicture from '/assets/images/rpg.jpg';
 import React, { Dispatch,SetStateAction } from 'react';
 
-interface SomeComponentProps {
+interface ModalsProps {
   setModals: Dispatch<SetStateAction<boolean>>;
 }
 
-const NewPost: React.FC<SomeComponentProps> = ({setModals}) => {
+const NewPost: React.FC<ModalsProps> = ({setModals}) => {
   const handleOpenModal = () => {
       setModals(true)
   }

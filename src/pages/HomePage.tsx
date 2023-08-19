@@ -74,7 +74,7 @@ export default function HomePage() {
                 </div>
 
             </Container>
-            <div className={`backdrop ${openModals ? 'block' : 'hidden'} fixed z-20 top-0 bg-black/10 w-full h-[100vh]`}>
+            <div className={`backdrop ${openModals ? 'block' : 'hidden'} fixed z-20 top-0 bg-black/50 w-full h-[100vh]`}>
             </div>
         </>
     )
